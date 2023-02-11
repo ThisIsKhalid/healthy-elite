@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import Departments from "@/components/Home/Departments";
 import Services from "@/components/Home/Services";
 import styles from "@/styles/Home.module.css";
 import Head from "next/head";
@@ -15,7 +16,8 @@ export default function Home() {
       </Head>
       <main>
         <Header />
-        <Services/>
+        <Departments />
+        <Services />
         <Footer />
       </main>
     </>
