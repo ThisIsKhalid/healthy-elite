@@ -17,8 +17,10 @@ export default function Home() {
       <main>
         <Header />
         <Departments />
+
         <Services />
         <Footer />
+
       </main>
     </>
   );
