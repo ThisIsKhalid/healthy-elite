@@ -4,4 +4,6 @@ follow this steps evry time you start working your project:
 
 - then work on your branch
   - switch to your branch : git checkout <your name>
-  - then marge the codes into your branch : git merge main
+  - then marge the codes from main into your branch : git merge main
+  - then code your own on your branch and then git add,commit,push( on your branch)
+  - nothing else !
