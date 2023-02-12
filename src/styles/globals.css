@@ -22,20 +22,16 @@ body {
   background-color: #f9fbfc;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
 
 /* -------color------------- */
 
-h1 h2 h3 h4 {
+/* h1, h2, h3, h4 {
   color: var(--primary-color);
 }
 
 h5, h6, p {
   color: #658cb8;
-}
+} */
 
 button {
   background: linear-gradient(96.14deg, #3a8ef6 -10.84%, #6f3afa 196.74%);
@@ -49,6 +45,10 @@ button {
 h1 {
   font-size: 40px;
 }
+/* title banner text */
+h2 {
+  font-size: 36px;
+}
 
 /* all section heading title */
 h3 {
@@ -57,22 +57,22 @@ h3 {
 
 /* all card heading title */
 h4 {
-  font-size: 24px;
+  font-size: 28px;
 }
 
 /* all section subheading */
 h5 {
-  font-size: 20px;
+  font-size: 24px;
 }
 
 /* paragraph */
 h6 {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 /* card paragraph or details text */
 p {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 /* card initial style */
