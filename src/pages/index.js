@@ -1,6 +1,10 @@
 import Footer from "@/components/Footer/Footer";
+import Header from "@/components/Header";
 import Departments from "@/components/Home/Departments";
+import EmergencyBooking from "@/components/Home/EmergencyBooking";
+import Hero from "@/components/Home/Hero";
 import OurProduct from "@/components/Home/OurProduct";
+
 import Services from "@/components/Home/Services";
 import Testimonial from "@/components/Testimonial/Testimonial";
 import styles from "@/styles/Home.module.css";
@@ -16,10 +20,15 @@ export default function Home({ products }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <OurProduct products={products} />
+        <Header />
+        <Hero></Hero>
+        <EmergencyBooking></EmergencyBooking>
+        {/* <Departments />
+        <OurProduct products={products}/>
         <Departments />
 
         <Services />
+        <Footer /> */}
 
         <Testimonial />
         {/* why choose us */}
