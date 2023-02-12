@@ -16,6 +16,8 @@
 }
 
 body {
+  max-width: 1440px;
+  margin: auto;
   font-family: "Ubuntu", sans-serif;
   background-color: #f9fbfc;
 }
@@ -27,12 +29,12 @@ a {
 
 /* -------color------------- */
 
-h1 h2 h3 h4 h5 h6 {
+h1 h2 h3 h4 {
   color: var(--primary-color);
 }
 
-p {
-  color: var(--secondary-color);
+h5, h6, p {
+  color: #658cb8;
 }
 
 button {
@@ -60,7 +62,7 @@ h4 {
 
 /* all section subheading */
 h5 {
-font-size: 20px;
+  font-size: 20px;
 }
 
 /* paragraph */
