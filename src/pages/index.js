@@ -1,6 +1,8 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Departments from "@/components/Home/Departments";
+import EmergencyBooking from "@/components/Home/EmergencyBooking";
+import Hero from "@/components/Home/Hero";
 import Services from "@/components/Home/Services";
 import styles from "@/styles/Home.module.css";
 import Head from "next/head";
@@ -16,10 +18,12 @@ export default function Home() {
       </Head>
       <main>
         <Header />
-        <Departments />
+        <Hero></Hero>
+        <EmergencyBooking></EmergencyBooking>
+        {/* <Departments />
 
         <Services />
-        <Footer />
+        <Footer /> */}
 
       </main>
     </>
