@@ -55,10 +55,15 @@ h3 {
 
 /* all card heading title */
 h4 {
-  font-size: 1.563rem;
+  font-size: 24px;
 }
 
-/* all section subheading or paragraph */
+/* all section subheading */
+h5 {
+font-size: 20px;
+}
+
+/* paragraph */
 h6 {
   font-size: 16px;
 }
