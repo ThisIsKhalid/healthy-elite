@@ -45,12 +45,12 @@ button {
 h1 {
   font-size: 40px;
 }
-/* title banner text */
+/* section heading  */
 h2 {
   font-size: 36px;
 }
 
-/* all section heading title */
+/* all title */
 h3 {
   font-size: 32px;
 }
@@ -60,12 +60,12 @@ h4 {
   font-size: 28px;
 }
 
-/* all section subheading */
+/*  */
 h5 {
   font-size: 24px;
 }
 
-/* paragraph */
+/* paragraph, section sub-heading  */
 h6 {
   font-size: 20px;
 }
