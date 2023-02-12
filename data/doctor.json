@@ -1,0 +1,74 @@
+{
+    "doctors": [
+       
+        
+        {
+         "name": "Dr. Tahir",
+         "image": "https://mrcode.az/media/ready-to-start/docman/assets/img/doctors/doctor-thumb-02.jpg",
+         "rating": 4.9,
+         "experience": "5 years experience",
+         "availability": " 9.00 PM"
+        },
+        {
+         "name": "Dr. Tuhin",
+         "image": "https://mrcode.az/media/ready-to-start/docman/assets/img/doctors/doctor-01.jpg",
+         "rating": 5,
+         "experience": "6 years experience",
+         "availability": " 10.00 PM"
+        },
+        {
+         "name": "Dr. Utsho",
+         "image": "https://mrcode.az/media/ready-to-start/docman/assets/img/doctors/doctor-05.jpg",
+         "rating": 4.9,
+         "experience": "5 years experience",
+         "availability": " 9.00 PM"
+        },
+        {
+         "name": "Dr. James",
+         "image": "https://mrcode.az/media/ready-to-start/docman/assets/img/doctors/doctor-08.jpg",
+         "rating": 5,
+         "experience": "5 years experience",
+         "availability": " 11.00 AM"
+        },
+        {
+         "name": "Dr. Benjamin",
+         "image": "https://mrcode.az/media/ready-to-start/docman/assets/img/doctors/doctor-04.jpg",
+         "rating": 4.9,
+         "experience": "5 years experience",
+         "availability": " 5.00 PM"
+        },
+        {
+         "name": "Dr. Polash",
+         "image": "https://mrcode.az/media/ready-to-start/docman/assets/img/doctors/doctor-03.jpg",
+         "rating": 4.9,
+         "experience": "5 years experience",
+         "availability": " 9.00 PM"
+        },
+        {
+         "name": "Dr. Nadim",
+         "image": "https://mrcode.az/media/ready-to-start/docman/assets/img/doctors/doctor-02.jpg",
+         "rating": 4.9,
+         "experience": "5 years experience",
+         "availability": " 8.00 PM"
+        },
+        {
+         "name": "Dr. Fahim",
+         "image": "https://mrcode.az/media/ready-to-start/docman/assets/img/doctors/doctor-07.jpg",
+         "rating": 4.9,
+         "experience": "5 years experience",
+         "availability": " 9.00 PM"
+        },
+       
+        {
+         "name": "Dr. Shahi",
+         "image": "https://mrcode.az/media/ready-to-start/docman/assets/img/doctors/doctor-06.jpg",
+         "rating": 4.9,
+         "experience": "5 years experience",
+         "availability": " 9.00 PM"
+        }
+       
+       
+      
+      
+    ]
+}
