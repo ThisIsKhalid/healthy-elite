@@ -1,11 +1,12 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import Departments from "@/components/Home/Departments";
+import Departments from "@/components/Home/Departments";   
+import OurProduct from "@/components/Home/OurProduct";
 import Services from "@/components/Home/Services";
 import styles from "@/styles/Home.module.css";
 import Head from "next/head";
 
-export default function Home() {
+export default function Home({products}) {
   return (
     <>
       <Head>
@@ -17,7 +18,7 @@ export default function Home() {
       <main>
         <Header />
         <Departments />
-
+        <OurProduct products={products} />
         <Services />
         <Footer />
 
@@ -25,3 +26,14 @@ export default function Home() {
     </>
   );
 }
+
+export async function getStaticProps() {
+  const {products} = await import('/data/productData.json'); 
+
+  return {
+      props: {
+        products: products
+      }
+  }
+}
+
