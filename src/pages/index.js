@@ -24,17 +24,14 @@ export default function Home({products,doctors}) {
         <Header />
         <Hero></Hero>
         <EmergencyBooking></EmergencyBooking>
-        {/* <Departments />
-        <OurProduct products={products}/>
+        
+        <OurProduct products={products} />
         <Departments />
 
         <Services />
-        <SelectDoctor></SelectDoctor>
-        <BookDoctor doctors={doctors}></BookDoctor>
-      
-
+        <SelectDoctor />
+        <BookDoctor doctors={doctors} />
         <Testimonial />
-        {/* why choose us */}
         <Footer />
       </main>
     </>
