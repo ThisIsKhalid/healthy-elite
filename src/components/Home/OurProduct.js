@@ -9,7 +9,7 @@ import { FaArrowRight } from 'react-icons/fa'
 
 const OurProduct = ({products}) => {
  
-    console.log(products)
+    // console.log(products)
 
 
   const [items, setItems] = useState([products])
