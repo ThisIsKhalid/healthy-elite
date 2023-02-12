@@ -1,0 +1,43 @@
+.title {
+    color: #a9abc0;
+    font-size: 16px;
+}
+
+.heading {
+    color: #033b4a;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.subTitle {
+    color: #a9abc0;
+    font-size: 16px;
+}
+
+.sliderp {
+    padding-block: 20px;
+    font-size: 22px;
+    color: #afb9be;
+}
+
+.swiperP {
+    cursor: pointer;
+}
+
+.stars {
+    display: flex;
+    align-items: center;
+    color: #ffdd44;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.name {
+    color: #033b4a;
+    font-size: 22px;
+}
+
+.title {
+    color: #afb9be;
+    font-size: 16px;
+}

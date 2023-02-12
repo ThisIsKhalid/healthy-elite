@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
+.footer {
+    color: #000000;
+    margin-top: 50px;
+}
+
+.w30 {
+    width: 30px;
+}
+
+.brandlogo {
+    font-family: 'Poppins';
+    display: flex;
+    font-weight: 600;
+    font-size: 20px;
+    position: relative;
+    color: #003367;
+}
+
+.plus {
+    font-size: 30px;
+    margin-right: 10px;
+    color: #ff8686;
+}
+
+.linkHeader {
+    font-family: 'Poppins';
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    position: relative;
+    color: #b1b1b1;
+}
+
+.linkHeader::after {
+    position: absolute;
+    width: 40%;
+    content: '';
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background: #ff8686;
+}
+
+.sDes {
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 16px;
+    padding-block: 16px;
+}
+
+.navlink {
+    padding: 5px 0px;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-family: 'Sora', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #9b9492;
+    transition: all 0.2s;
+}
+
+.navlink:hover {
+    color: #ff8686;
+}
+
+.newsP {
+    padding: 5px 0px;
+    margin-bottom: 10px;
+    font-family: 'Sora', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #9b9492;
+}
+
+.bottomP {
+    font-family: 'Sora', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+.inputGroup {
+    position: relative;
+    border: 1px solid #ff8686;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.email:focus {
+    box-shadow: none;
+}
+
+.subButton {
+    position: absolute;
+    right: 0;
+    background: #ff8686;
+    color: #fff;
+    padding: 10px;
+    top: 0;
+    border-radius: 25px;
+}

@@ -1,10 +1,13 @@
-import Footer from "@/components/Footer";
+import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header";
 import BookDoctor from "@/components/Home/BookDoctor";
 import Departments from "@/components/Home/Departments";   
 import OurProduct from "@/components/Home/OurProduct";
 import SelectDoctor from "@/components/Home/SelectDoctor";
+import EmergencyBooking from "@/components/Home/EmergencyBooking";
+import Hero from "@/components/Home/Hero";
 import Services from "@/components/Home/Services";
+import Testimonial from "@/components/Testimonial/Testimonial";
 import styles from "@/styles/Home.module.css";
 import Head from "next/head";
 
@@ -18,15 +21,21 @@ export default function Home({products,doctors}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
+        <Header />
+        <Hero></Hero>
+        <EmergencyBooking></EmergencyBooking>
+        {/* <Departments />
         <OurProduct products={products}/>
         <Departments />
 
         <Services />
-
         <SelectDoctor></SelectDoctor>
         <BookDoctor doctors={doctors}></BookDoctor>
-        <Footer />
+      
 
+        <Testimonial />
+        {/* why choose us */}
+        <Footer />
       </main>
     </>
   );
@@ -43,14 +52,4 @@ export async function getStaticProps() {
       }
   }
 }
-
-// export async function getStaticProps() {
-//   const {doctors} = await import('/data/doctor.json'); 
-
-//   return {
-//       props: {
-//         doctors: doctors
-//       }
-//   }
-// }
 
