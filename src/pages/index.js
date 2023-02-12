@@ -1,7 +1,11 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import Departments from "@/components/Home/Departments";
+import EmergencyBooking from "@/components/Home/EmergencyBooking";
+import Hero from "@/components/Home/Hero";
 import Departments from "@/components/Home/Departments";   
 import OurProduct from "@/components/Home/OurProduct";
+
 import Services from "@/components/Home/Services";
 import styles from "@/styles/Home.module.css";
 import Head from "next/head";
@@ -16,11 +20,15 @@ export default function Home({products}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
+        <Header />
+        <Hero></Hero>
+        <EmergencyBooking></EmergencyBooking>
+        {/* <Departments />
         <OurProduct products={products}/>
         <Departments />
 
         <Services />
-        <Footer />
+        <Footer /> */}
 
       </main>
     </>
