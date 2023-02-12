@@ -1,16 +1,16 @@
-import Footer from "@/components/Footer";
+import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header";
 import Departments from "@/components/Home/Departments";
 import EmergencyBooking from "@/components/Home/EmergencyBooking";
 import Hero from "@/components/Home/Hero";
-import Departments from "@/components/Home/Departments";   
 import OurProduct from "@/components/Home/OurProduct";
 
 import Services from "@/components/Home/Services";
+import Testimonial from "@/components/Testimonial/Testimonial";
 import styles from "@/styles/Home.module.css";
 import Head from "next/head";
 
-export default function Home({products}) {
+export default function Home({ products }) {
   return (
     <>
       <Head>
@@ -30,18 +30,21 @@ export default function Home({products}) {
         <Services />
         <Footer /> */}
 
+        <Testimonial />
+        {/* why choose us */}
+        <Footer />
       </main>
     </>
   );
 }
 
 export async function getStaticProps() {
-  const {products} = await import('/data/productData.json'); 
+  const { products } = await import('/data/productData.json');
 
   return {
-      props: {
-        products: products
-      }
+    props: {
+      products: products
+    }
   }
 }
 
