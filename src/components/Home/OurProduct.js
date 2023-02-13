@@ -18,7 +18,9 @@ const OurProduct = ({products}) => {
   useEffect(() => {
     const filteredProducts = products?.filter((product) => product.category === category)
     setItems(filteredProducts)
-  })
+  }, [category])
+  
+  console.log(items, category)
 
  
   const Image1 = 'https://i.ibb.co/2nDj570/hal-gatewood-jb-Clos-Ds-D4-unsplash-1-1.webp'
@@ -57,27 +59,27 @@ const OurProduct = ({products}) => {
 
           <div className="">
             <h2 className="font-bold text-center mb-10">Popular Categories</h2>
-            <div className="grid lg:grid-cols-4 justify-items-center gap-10">
-              <div className='flex flex-col items-center card rounded-xl w-full justify-center cursor-pointer p-5 group transition-all duration-300 hover:scale-105'>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 justify-items-center gap-5 lg:gap-10">
+              <div className='flex flex-col items-center card rounded-xl md:w-80 lg:w-full justify-center cursor-pointer p-5 group transition-all duration-300 hover:scale-105'>
                 <Image className="p-3 transition-all duration-300 group-hover:scale-125" width={200} height={200} src="https://i.ibb.co/YR66KR4/1605436989312.png" alt="" />
                 <div className='text-center z-50'>
                   <p className="text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-violet-600">Baby care</p>
                 </div>
               </div>
-              <div className='flex flex-col items-center card rounded-xl w-full justify-center cursor-pointer group transition-all duration-300 hover:scale-105'>
+              <div className='flex flex-col items-center card rounded-xl md:w-80 lg:w-full justify-center cursor-pointer group transition-all duration-300 hover:scale-105'>
                 <Image className="p-3 transition-all duration-300 group-hover:scale-125" width={200} height={200} src="https://i.ibb.co/yVVTyjF/ritch-50-ml1-1631424889466.webp" alt="" />
                 <div className='text-center z-50'>
                   <p className="text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-violet-600">Prescription Medicine</p>
                 </div>
               </div>
-              <div className='flex flex-col items-center card rounded-xl w-full justify-center cursor-pointer group transition-all duration-300 hover:scale-105'>
+              <div className='flex flex-col items-center card rounded-xl md:w-80 lg:w-full justify-center cursor-pointer group transition-all duration-300 hover:scale-105'>
                 <Image className="p-3 transition-all duration-300 group-hover:scale-125" width={200} height={200} src="https://i.ibb.co/zbNzDGS/ey-Jid-WNr-ZXQi-Oi-Jhcm9n-Z2-Ei-LCJr-ZXki-Oi-Jt-ZWRp-Y2lu-ZVwv-Mjdc-Lz-I3-Mz-Yz-LVNlbm9y-YS1-TYW5pd.jpg" alt="" />
                 <div className='text-center z-50'>
                   <p className="text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-violet-600">Women Care</p>
                 </div>
               </div>
             
-              <div className='flex flex-col items-center card rounded-xl w-full justify-center cursor-pointer group transition-all duration-300 hover:scale-105'>
+              <div className='flex flex-col items-center card rounded-xl md:w-80 lg:w-full justify-center cursor-pointer group transition-all duration-300 hover:scale-105'>
                 <Image className="p-3 transition-all duration-300 group-hover:scale-125" width={200} height={200} src="https://i.ibb.co/ZzJ3KXJ/home9-png-39-1.png" alt="" />
                 <div className='text-center z-50'>
                   <p className="text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-violet-600">Healthcare devices</p>
@@ -89,7 +91,7 @@ const OurProduct = ({products}) => {
 
           <div className='w-full flex flex-col justify-start px-5 py-10 rounded-xl'>
             <h2 className="font-bold text-center mb-10">Browse medicine & Health products</h2> 
-            <div className='bg-gradient-to-r from-[#3a8ef6] to-[#3a8ef6]  grid lg:grid-cols-6 gap-5 p-4 rounded-xl'>
+            <div className='bg-gradient-to-r from-[#3a8ef6] to-[#3a8ef6]  grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5 p-4 rounded-xl'>
                 <p onClick={()=>setCategory("baby")} className={`cursor-pointer transition-all duration-300 rounded-xl shadow h-10 flex items-center justify-center gap-3  hover:bg-[#031432] hover:text-white hover:font-bold group ${category === 'baby' ? 'font-bold bg-[#031432] text-white' : 'bg-white'  }`}><FaBaby className={`${category === 'baby' ? 'text-white' : 'text-blue-400' } text-xl  group-hover:text-white`}/> Baby Care</p>
                 <p onClick={()=>setCategory("medicine")} className={`cursor-pointer transition-all duration-300 rounded-xl shadow h-10 flex items-center justify-center gap-3  hover:bg-[#031432] hover:text-white hover:font-bold group ${category === 'medicine' ? 'font-bold bg-[#031432] text-white' : 'bg-white'  }`}><FaTablets className={`${category === 'medicine' ? 'text-white' : 'text-blue-400' } text-xl  group-hover:text-white`}/>Medicine</p>
                 <p onClick={()=>setCategory("herbal")} className={`cursor-pointer transition-all duration-300 rounded-xl shadow h-10 flex items-center justify-center gap-3  hover:bg-[#031432] hover:text-white hover:font-bold group ${category === 'herbal' ? 'font-bold bg-[#031432] text-white' : 'bg-white'  }`}><TbBottle className={`${category === 'herbal' ? 'text-white' : 'text-blue-400' } text-xl  group-hover:text-white`}/> Herbal</p>
@@ -98,7 +100,7 @@ const OurProduct = ({products}) => {
                 <p onClick={()=>setCategory("devices")} className={`cursor-pointer transition-all duration-300 rounded-xl shadow h-10 flex items-center justify-center gap-3  hover:bg-[#031432] hover:text-white hover:font-bold group ${category === 'devices' ? 'font-bold bg-[#031432] text-white' : 'bg-white'  }`}><FaStethoscope className={`${category === 'devices' ? 'text-white' : 'text-blue-400' } text-xl  group-hover:text-white`}/> Devices</p>
             </div>
 
-            <div className="grid lg:grid-cols-4 gap-10 my-10 ">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-10 my-5 lg:my-10 ">
               { 
               items.slice(0,8)?.map((item, index) =>
                     (
