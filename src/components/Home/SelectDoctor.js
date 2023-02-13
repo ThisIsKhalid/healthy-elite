@@ -5,29 +5,29 @@ const SelectDoctor = () => {
   return (
     <div className="container mx-auto">
       <div>
-        <h1 className="text-3xl font-bold mb-5">Select a doctor</h1>
+        <h1 className="text-3xl font-bold mb-5 ml-2">Select a doctor</h1>
       </div>
-      <div className="">
-        <form className="flex justify-between  items-center">
-          <div className="flex bg-[#658cb8]  items-center gap-2  pl-4 rounded-full">
-            <label className=" text-white font-bold " for="name">
-              Showing doctors in:
+      <div className="card py-5 px-1 ">
+        <form className="flex lg:flex-row gap-3 flex-col justify-between  items-center   ">
+          <div className="w-full flex bg-[#658cb8]  items-center justify-between gap-2  pl-4 rounded-full">
+            <label className=" text-white font-bold " htmlFor="name">
+               doctors
             </label>
             <input
-              className="shadow appearance-none border-2 border-blue-500 rounded-full  py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className=" shadow appearance-none border-2 border-blue-500 rounded-full  py-2 lg:px-3 px-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               id="name"
               type="text"
               placeholder=" Name"
             />
           </div>
 
-          <div className="flex bg-[#658cb8]  items-center gap-2  pl-4 rounded-full">
+          <div className="w-[100%] flex bg-[#658cb8]  items-center justify-between gap-2  pl-6 rounded-full">
             <label className=" text-white font-bold " for="name">
               for
             </label>
-            <div className="relative">
+            <div className="relative  ">
               <select
-                className="shadow appearance-none border-2 border-blue-500 rounded-full  py-2 px-6 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                className=" shadow appearance-none border-2 border-blue-500 rounded-full  py-2  lg:px-32 pl-20 pr-6 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 id="name"
                 type="text"
               >
@@ -41,26 +41,26 @@ const SelectDoctor = () => {
             </div>
           </div>
 
-          <div className="flex bg-[#658cb8]  items-center gap-2  pl-4 rounded-full">
+          <div className="flex bg-[#658cb8] w-full  items-center justify-between gap-2 lg:pl-6  pl-4 rounded-full">
             <label className=" text-white font-bold " for="name">
               on
             </label>
             <input
-              className="shadow appearance-none border-2 border-blue-500 rounded-full  py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className=" shadow appearance-none border-2 border-blue-500 rounded-full  py-2 lg:pl-20 px-[6.6rem] text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               id="name"
               type="date"
               placeholder="Your Name"
             />
           </div>
-          <div>
-            <button className="py-2 px-8 rounded-full text-white font-semibold">
+          <div className="">
+            <button className="py-2 lg:px-8  px-40  rounded-full text-white font-semibold">
               Apply
             </button>
           </div>
         </form>
       </div>
       <div className="mt-5">
-        <p>Showing available doctors on January 21,2023</p>
+        <p className="ml-2">Showing available doctors on January 21,2023</p>
       </div>
       <div>
         
