@@ -25,7 +25,7 @@ const Departments = () => {
 
       {/* -----------department name-------------- */}
 
-      <div className="grid lg:grid-cols-6 text-[#658cb8] font-medium">
+      <div className="grid lg:grid-cols-6 grid-cols-2 text-[#658cb8] font-medium">
         <div className={divClass}>
           <Image src={cardiology} alt="" width={80} />
           <h5 className="mt-4">Cardiology</h5>
@@ -54,7 +54,7 @@ const Departments = () => {
 
       {/* ----------department details--------------- */}
 
-      <div className="grid grid-cols-2 items-center mt-10">
+      <div className="grid lg:grid-cols-2 items-center justify-center mt-10">
         <div>
           <Image className="mx-auto" src={cardiologyPhoto} alt="" width={500} />
         </div>
