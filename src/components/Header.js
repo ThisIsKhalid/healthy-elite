@@ -6,7 +6,7 @@ import { FaBars, FaWindowClose, FaFileMedical } from "react-icons/fa";
 const Header = () => {
   const [open, setOpen] = useState(false);
   return (
-    <header className="z-[999] w-full py-4 md:py-10  container mx-auto">
+    <header className="z-[999] w-full py-4 md:py-6  container mx-auto">
       <nav className="py-5 md:flex md:items-center md:justify-between md:place-items-center">
         <div className="flex justify-between place-items-center">
           <Link

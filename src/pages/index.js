@@ -11,6 +11,8 @@ import Services from "@/components/Home/Services";
 import WhyUS from "@/components/Home/WhyUS";
 import Testimonial from "@/components/Testimonial/Testimonial";
 import Head from "next/head";
+import FindDoctor from "@/components/Home/FindDoctor";
+import About from "@/components/Home/About";
 
 export default function Home({ products, doctors }) {
   return (
@@ -27,7 +29,8 @@ export default function Home({ products, doctors }) {
         <EmergencyBooking></EmergencyBooking>
         <WhyUS />
         <Doctors />
-
+        <FindDoctor/>
+        <About/>
         <OurProduct products={products} />
         <Departments />
 
