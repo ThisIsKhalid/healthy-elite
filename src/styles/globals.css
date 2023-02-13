@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
-
+/* @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -18,10 +18,10 @@
 body {
   max-width: 1440px;
   margin: auto;
-  font-family: "Ubuntu", sans-serif;
+  /* font-family: "Ubuntu", sans-serif; */
+  font-family: "Poppins", sans-serif;
   background-color: #f9fbfc;
 }
-
 
 /* -------color------------- */
 
@@ -80,4 +80,8 @@ p {
   background: #ffffff;
   box-shadow: 0px 24px 32px -3px rgba(3, 9, 50, 0.04);
   border-radius: 24px;
+}
+
+.primary-gradient {
+  background: linear-gradient(96.14deg, #3a8ef6 -10.84%, #6f3afa 196.74%);
 }
