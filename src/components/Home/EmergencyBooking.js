@@ -2,77 +2,53 @@ import React from "react";
 
 const EmergencyBooking = () => {
   return (
-    <div className="grid gap-3 grid-cols-1 md:grid-cols-2 py-4 container mx-auto">
-      <div>
-        <h3 className="text-he-text-h3 text-he-text-head my-2">Booking Form</h3>
-        <form class="bg-white shadow-he-shadow px-4 py-6 rounded-md">
-          <div class="mb-4">
-            <label
-              class="block text-he-text-head text-sm font-bold mb-2"
-              for="username"
-            >
-              Pickup Location
-            </label>
-            <input
-              class="shadow appearance-none border rounded w-full py-2 px-3 text-he-text-paragraph leading-tight focus:outline-none focus:shadow-outline"
-              id="username"
-              type="text"
-              placeholder="Pickup Location"
-            />{" "}
-          </div>
-          <div className="flex gap-3 items-center justify-between">
-            <div class="mb-4 w-1/2">
-              <label
-                class="block text-he-text-head text-sm font-bold mb-2"
-                for="username"
-              >
-                Pickup Date
-              </label>
+    <div className="flex gap-10 flex-col md:flex-row py-6 container mx-auto">
+      <div className="w-full md:w-3/5">
+        <form className="bg-white shadow-he-shadow px-10 py-6 rounded-md">
+          <h3 className="text-he-text-h3 text-he-text-head my-2">
+            Emergency Ambulance Booking
+          </h3>
+          <div className="flex flex-col md:flex-row gap-3 items-center justify-between">
+            <div className="mb-4 w-full  md:w-1/3">
               <input
-                class="shadow appearance-none border rounded w-full py-2 px-3 text-he-text-paragraph leading-tight focus:outline-none focus:shadow-outline"
-                id="username"
+                className="w-full shadow appearance-none border rounded py-2 px-3 text-he-text-head leading-tight focus:outline-none focus:shadow-outline"
+                type="text"
+                placeholder="Pickup Location"
+              />{" "}
+            </div>
+            <div className="mb-4 w-full md:w-1/3">
+              <input
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-he-text-head leading-tight focus:outline-none focus:shadow-outline"
                 type="date"
                 placeholder="Username"
               />{" "}
             </div>
-            <div class="mb-4 w-1/2">
-              <label
-                class="block text-he-text-head text-sm font-bold mb-2"
-                for="username"
-              >
-                Pickup Time
-              </label>
+            <div className="mb-4 w-full  md:w-1/3">
               <input
-                class="shadow appearance-none border rounded w-full py-2 px-3 text-he-text-paragraph leading-tight focus:outline-none focus:shadow-outline"
-                id="username"
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-he-text-head leading-tight focus:outline-none focus:shadow-outline"
                 type="time"
                 placeholder="Username"
               />{" "}
             </div>
           </div>
           <div className="flex gap-3 items-center justify-between">
-            <div class="mb-4 w-1/2">
-              <label
-                class="block text-he-text-head text-sm font-bold mb-2"
-                for="username"
-              >
-                Destination
-              </label>
+            <div className="mb-4 w-full  md:w-1/3">
               <input
-                class="shadow appearance-none border rounded w-full py-2 px-3 text-he-text-paragraph leading-tight focus:outline-none focus:shadow-outline"
-                id="username"
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-he-text-head leading-tight focus:outline-none focus:shadow-outline"
+                type="text"
+                placeholder="Phone Number"
+              />{" "}
+            </div>
+            <div className="mb-4 w-full  md:w-1/3">
+              <input
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-he-text-head leading-tight focus:outline-none focus:shadow-outline"
                 type="text"
                 placeholder="Destination"
               />{" "}
             </div>
-            <div class="mb-4 w-1/2">
-              <label
-                class="block text-he-text-head text-sm font-bold mb-2"
-                for="username"
-              >
-                Select Car
-              </label>
-              <select class="shadow appearance-none border rounded w-full py-2 px-3 text-he-text-paragraph leading-tight focus:outline-none focus:shadow-outline">
+            <div className="mb-4 w-full  md:w-1/3">
+              <select className="shadow appearance-none border rounded w-full py-2 px-3 text-he-text-head leading-tight focus:outline-none focus:shadow-outline">
+                <option value="">Select a Car</option>
                 <option value="">Toyota- Hiace - Full AC</option>
                 <option value="">Noah Blue Large</option>
                 <option value="">National Ambulance</option>
@@ -81,23 +57,18 @@ const EmergencyBooking = () => {
             </div>
           </div>
 
-          <div class="flex items-center justify-between">
-            <button
-              class="inline-block text-white text-he-text-sm px-5 py-3 rounded-he-rounded bg-gradient-to-r from-blue-400 to-violet-600 shadow-he-shadow-btn mb-2"
-              type="button"
-            >
-              Confirm Booking
-            </button>
-          </div>
+          <button
+            className="block w-full text-white text-he-text-sm px-5 py-3 rounded-he-rounded bg-gradient-to-r from-blue-400 to-violet-600 shadow-he-shadow-btn mb-2"
+            type="button"
+          >
+            Confirm Booking
+          </button>
         </form>
       </div>
-      <div>
+      <div className="w-full md:w-2/5">
         <div>
-          <h3 className="text-he-text-h3 text-he-text-head my-2">
-            Booking Details
-          </h3>
-          <div className="bg-white shadow-he-shadow px-4 py-6 rounded-md">
-            <div className="flex flex-col md:flex-row justify-between">
+          <div className="bg-gradient-to-r from-blue-500 to-purple-500 px-4 py-6 rounded-md">
+            {/* <div className="flex flex-col md:flex-row justify-between">
               <div>
                 <div>
                   <h4 className="text-he-text-p text-he-text-paragraph">
@@ -160,6 +131,20 @@ const EmergencyBooking = () => {
                   </p>
                 </div>
               </div>
+            </div> */}
+            <div className="">
+              <h4 className="text-white text-base my-2 font-bold">
+                Emergency Cases
+              </h4>
+              <h2 className="text-he-text-h1 font-bold my-2">1254 000 6000</h2>
+              <p className="text-white  ">
+                If you need a doctor urgently outside of medicenter opening
+                hours, call emergency appointment number for emergency service.
+              </p>
+              <button className="inline-block my-2 py-3 px-5 text-white bg-white">
+                {" "}
+                24/7 Service available
+              </button>
             </div>
           </div>
         </div>
