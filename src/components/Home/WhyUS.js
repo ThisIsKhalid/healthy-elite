@@ -15,7 +15,7 @@ const WhyUS = () => {
 
     return (
         <section id="whyUs" className="flex flex-col justify-center items-center mt-24 md:mt-28 lg:mt-32 container mx-auto  px-8 md:px-8 lg:px-14 ">
-            <div className="grid-cols-1 md:grid md:grid-cols-2 md:justify-around md:items-center gap-6 md:gap-8 lg:gap-12 mx-auto border">
+            <div className="grid-cols-1 md:grid md:grid-cols-2 md:justify-around md:items-center gap-6 md:gap-8 lg:gap-12 mx-auto ">
                 <div className="sm:mt-8 w-full ">
                     <h1 className="font-bold text-[24px] md:text-he-text-h3 text-he-text-head py-2">
                         We Giving  people <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-violet-600">The Perfect Smile</span> they wished since 2010
