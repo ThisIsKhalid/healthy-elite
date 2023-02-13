@@ -11,6 +11,7 @@ import Testimonial from "@/components/Testimonial/Testimonial";
 import styles from "@/styles/Home.module.css";
 import Head from "next/head";
 import FindDoctor from "@/components/Home/FindDoctor";
+import About from "@/components/Home/About";
 
 export default function Home({products,doctors}) {
   return (
@@ -26,6 +27,7 @@ export default function Home({products,doctors}) {
         <Hero></Hero>
         <EmergencyBooking></EmergencyBooking>
         <FindDoctor/>
+        <About/>
         
         <OurProduct products={products} />
         <Departments />

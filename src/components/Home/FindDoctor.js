@@ -7,11 +7,6 @@ const { FaSearch } = require("react-icons/fa");
 function FindDoctor(){
     return (
         <div className= "w-full bg-white">
-    
-        {/* <div className='w-full'>
-            <Image src={BG} className='w-full h-[563px]' alt='bg-image'
-            ></Image>
-            </div> */}
             <div className="  sm:w-[400px] sm:h-[300px] md:w-[400px] md:h-[250px] lg:w-[800px] lg:h-[133px]  bg-white border-gray-300 shadow-he-shadow container mx-auto p-5">
                 <h1 className="font-bold text-he-text-h4 text-blue-800">Find a doctor</h1>
                 <div className='lg:flex gap-5 items-center'>
