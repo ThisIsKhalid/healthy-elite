@@ -5,15 +5,14 @@ import { FaFileMedical } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-2 py-10 bg-he-bg  container mx-auto">
+    <div className="grid items-center grid-cols-1 md:grid-cols-2 gap-2 py-3 md:py-6 bg-he-bg  container mx-auto">
       <div>
         <h1 className="text-he-text-h1 text-he-text-head font-bold">
-          Klinik 24 siap melayani keluhan masyarakat selama 24/7.
+          Clinic 24 is ready to serve public complaints 24/7.
         </h1>
         <p className="text-he-text-p text-he-text-paragraph mb-2">
-          Rumah sakit adalah bagian integral dari suatu organisasi sosial dan
-          kesehatan dengan fungsi menyediakan pelayanan paripurna
-          (komprehensif).
+          The hospital is an integral part of a social organization and health
+          with the function of providing plenary services (comprehensive).
         </p>
         <Link
           href="/"
@@ -29,8 +28,8 @@ const Hero = () => {
           <Image
             src="https://i.ibb.co/t8Nxxym/doc-img.png"
             alt=""
-            layout="fill"
-            className="object-cover"
+            fill="true"
+            style={{ objectFit: "contain" }}
           />
         </div>
       </div>
