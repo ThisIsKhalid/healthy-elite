@@ -1,17 +1,18 @@
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header";
 import BookDoctor from "@/components/Home/BookDoctor";
-import Departments from "@/components/Home/Departments";   
-import OurProduct from "@/components/Home/OurProduct";
-import SelectDoctor from "@/components/Home/SelectDoctor";
+import Departments from "@/components/Home/Departments";
+import Doctors from "@/components/Home/Doctors";
 import EmergencyBooking from "@/components/Home/EmergencyBooking";
 import Hero from "@/components/Home/Hero";
+import OurProduct from "@/components/Home/OurProduct";
+import SelectDoctor from "@/components/Home/SelectDoctor";
 import Services from "@/components/Home/Services";
+import WhyUS from "@/components/Home/WhyUS";
 import Testimonial from "@/components/Testimonial/Testimonial";
-import styles from "@/styles/Home.module.css";
 import Head from "next/head";
 
-export default function Home({products,doctors}) {
+export default function Home({ products, doctors }) {
   return (
     <>
       <Head>
@@ -24,7 +25,8 @@ export default function Home({products,doctors}) {
         <Header />
         <Hero></Hero>
         <EmergencyBooking></EmergencyBooking>
-        
+        <WhyUS />
+        <Doctors />
         <OurProduct products={products} />
         <Departments />
 
@@ -39,14 +41,14 @@ export default function Home({products,doctors}) {
 }
 
 export async function getStaticProps() {
-  const {products} = await import('/data/productData.json'); 
-  const {doctors} = await import('/data/doctor.json');
+  const { products } = await import('/data/productData.json');
+  const { doctors } = await import('/data/doctor.json');
 
   return {
-      props: {
-        products: products,
-        doctors: doctors
-      }
+    props: {
+      products: products,
+      doctors: doctors
+    }
   }
 }
 
