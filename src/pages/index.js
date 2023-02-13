@@ -27,12 +27,12 @@ export default function Home({ products, doctors }) {
         <EmergencyBooking></EmergencyBooking>
         <WhyUS />
         <Doctors />
-        <OurProduct products={products} />
-        <Departments />
+        {/* <OurProduct products={products} /> */}
+        {/* <Departments /> */}
 
-        <Services />
-        <SelectDoctor />
-        <BookDoctor doctors={doctors} />
+        {/* <Services /> */}
+        {/* <SelectDoctor /> */}
+        {/* <BookDoctor doctors={doctors} /> */}
         <Testimonial />
         <Footer />
       </main>
