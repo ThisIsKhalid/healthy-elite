@@ -18,9 +18,9 @@ const OurProduct = ({products}) => {
   useEffect(() => {
     const filteredProducts = products?.filter((product) => product.category === category)
     setItems(filteredProducts)
-  }, [category])
+  }, [category, products])
   
-  console.log(items, category)
+  // console.log(items, category)
 
  
   const Image1 = 'https://i.ibb.co/2nDj570/hal-gatewood-jb-Clos-Ds-D4-unsplash-1-1.webp'
