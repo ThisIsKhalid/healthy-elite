@@ -1,5 +1,5 @@
 import Footer from "@/components/Footer/Footer";
-import Header from "@/components/Header";
+import Header from "@/components/Header/Header";
 import BookDoctor from "@/components/Home/BookDoctor";
 import Departments from "@/components/Home/Departments";
 import Doctors from "@/components/Home/Doctors";
@@ -9,7 +9,7 @@ import OurProduct from "@/components/Home/OurProduct";
 import SelectDoctor from "@/components/Home/SelectDoctor";
 import Services from "@/components/Home/Services";
 import WhyUS from "@/components/Home/WhyUS";
-import Testimonial from "@/components/Testimonial/Testimonial";
+import Testimonial from "@/components/Home/Testimonial/Testimonial";
 import Head from "next/head";
 import FindDoctor from "@/components/Home/FindDoctor";
 import About from "@/components/Home/About";

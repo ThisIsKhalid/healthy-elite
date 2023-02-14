@@ -7,8 +7,8 @@ import { FaStar } from 'react-icons/fa';
 // import required modules
 import { Pagination } from "swiper";
 import { Navigation } from "swiper";
-import bimage from './pimage.png';
-import style from './Testimonial.module.css';
+import bimage from 'public/Images/pimage.png';
+import style from '../../../styles/Testimonial.module.css';
 
 
 
