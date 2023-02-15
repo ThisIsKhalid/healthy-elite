@@ -21,18 +21,18 @@ export default function Home({products,doctors}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        {/* <Header />
+        <Header />
         <Hero></Hero>
         <EmergencyBooking></EmergencyBooking>
         
         <OurProduct products={products} />
         <Departments />
 
-        <Services /> */}
+        <Services />
         <SelectDoctor />
         <BookDoctor doctors={doctors} />
-        {/* <Testimonial />
-        <Footer /> */}
+        <Testimonial />
+        <Footer />
       </main>
     </>
   );
