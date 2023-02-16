@@ -45,7 +45,7 @@ export default function Home({ products, doctors }) {
 }
 
 export async function getStaticProps() {  
-  const productResponse = await fetch(`http://localhost:3000/api/products`)
+  const productResponse = await fetch(`https://healthy-elite.vercel.app/api/products`)
   const {products} = await productResponse.json() 
   const { doctors } = await import('/data/doctor.json');
 
