@@ -44,8 +44,9 @@ export default function Home({ products, doctors }) {
   );
 }
 
-export async function getStaticProps() {
-  const { products } = await import('/data/productData.json');
+export async function getStaticProps() {  
+  const productResponse = await fetch(`http://localhost:3000/api/products`)
+  const {products} = await productResponse.json() 
   const { doctors } = await import('/data/doctor.json');
 
   return {

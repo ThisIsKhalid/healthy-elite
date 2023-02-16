@@ -9,9 +9,6 @@ import { FaArrowRight } from 'react-icons/fa'
 
 const OurProduct = ({products}) => {
  
-    // console.log(products)
-
-
   const [items, setItems] = useState([products])
   const [category, setCategory] = useState('baby')
 
@@ -20,15 +17,69 @@ const OurProduct = ({products}) => {
     setItems(filteredProducts)
   }, [category])
   
-  console.log(items, category)
 
  
   const Image1 = 'https://i.ibb.co/2nDj570/hal-gatewood-jb-Clos-Ds-D4-unsplash-1-1.webp'
   const Image2 = 'https://i.ibb.co/C5LLpSd/photo-1628771065518-0d82f1938462.jpg'
     
 
+  const [isOpen, setIsOpen] = useState(false);
+
+  const openModal = () => {
+    setIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsOpen(false);
+  };
+
   return (
     <div className='h-full py-10'>         
+      <>
+      {/* Button to open modal */}
+      <button className="bg-blue-500 text-white font-bold py-2 px-4 rounded" onClick={openModal}>
+        Open Modal
+      </button>
+
+      {/* Modal */}
+      {isOpen && (
+        <div className="fixed z-10 inset-40 overflow-y-auto">
+          <div className="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+
+            {/* Background overlay */}
+            <div className="fixed inset-0 transition-opacity" aria-hidden="true">
+              <div className="absolute inset-0 bg-gray-500 opacity-75"></div>
+            </div>
+
+            {/* Modal content */}
+            <div className="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
+              <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                <div className="sm:flex sm:items-start">
+                  <div className="mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 sm:mx-0 sm:h-10 sm:w-10">
+                    {/* Icon or image */}
+                  </div>
+                  <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                    <h3 className="text-lg leading-6 font-medium text-gray-900">Modal Title</h3>
+                    <div className="mt-2">
+                      <p className="text-sm text-gray-500">Modal content goes here.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+                <button
+                  type="button"
+                  className="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-blue-600 text-base font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 sm:ml-3 sm:w-auto sm:text-sm"
+                  onClick={closeModal}
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+    </>
         <div className='container-2xl mx-auto space-y-20 py-10 '>
 
           <div className="px-5 grid lg:grid-cols-2 justify-items-center gap-10">            
@@ -122,7 +173,8 @@ const OurProduct = ({products}) => {
           </div>
 
 
-        </div>
+      </div>
+      
       </div>
   )
 }
