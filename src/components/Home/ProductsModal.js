@@ -29,8 +29,8 @@ const ProductsModal = ({ isOpen,setIsOpen,productDetail }) => {
   return (
       <div>
           {isOpen && (
-        <div className="fixed z-50 inset-40 overflow-y-hidden">
-          <div className="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+        <div className="fixed z-50 inset-10 lg:inset-40">
+          <div className="flex items-center justify-center min-h-screen pt-4 lg:px-4 lg:pb-20 text-center sm:block sm:p-0">
 
             {/* Background overlay */}
             <div className="fixed inset-0 transition-opacity" aria-hidden="true">
@@ -38,10 +38,10 @@ const ProductsModal = ({ isOpen,setIsOpen,productDetail }) => {
             </div>
 
             {/* Modal content */}
-            <div className="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-md transform transition-all sm:my-8 sm:align-middle sm:max-w-xl sm:w-full">
+            <div className="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-md transform transition-all sm:my-8 sm:align-middle sm:max-w-full lg:max-w-xl ">
             <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                 <div className="grid grid-cols-2 gap-5 p-5 h-full">
-                    <Image src={productDetail.image} alt={productDetail.name} width={400} height={400} />      
+                    <Image src={productDetail.image} alt={productDetail.name} width={200} height={200} />      
                     <div className='flex flex-col gap-10 justify-center'>
                         <div>
                             <span className="font-bold capitalize">{productDetail.category}</span>
